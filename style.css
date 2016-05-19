@@ -1,0 +1,159 @@
+/*Color scheme
+
+#272F32 - dark gray
+#9DBDC6 - dark blue
+#DAEAEF - light blue
+#FF3D2E - orange
+#FFFFFF - white
+
+*/
+
+html, body {
+	margin: 0;
+	background-color: #272f32;
+	font-family: lato;
+}
+
+.title-container {
+	width: 100%;
+	height: 120px;
+	position: relative;
+	margin: 0;
+}
+
+.title {
+	color: white;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 4.2em;
+	font-weight: 300;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	margin: 0;
+	line-height: 52px;
+}
+
+.nav {
+	width: 100%;
+	font-size: 1.2em;
+	background-color: #ff3d2e;
+	height: 40px;
+}
+
+.nav-button {
+	height: 40px;
+	line-height: 40px;
+	background-color: #ff3d2e;
+}
+
+.nav-button, .nav-button:hover, .nav-button:active, .nav-button:visited {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.nav-button:nth-child(1) {
+	float: left;
+	margin-left: 12%;
+}
+
+.nav-button:nth-child(2) {
+	float: right;
+	margin-right: 12%;
+}
+
+.content-parent {
+	background-color: #9DBDC6;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.starting-content, .petition-content, .fourty-five {
+	width: 90%;
+	margin-left: 5%;
+	text-align: justify;
+	background-color: #9DBDC6;
+	line-height: 2em;
+}
+
+.starting-content p, .petition-content p, .fourty-five p {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+p {
+	margin: 0;
+}
+
+.breaker-text {
+	font-size: 1.6em;
+	color: gray;
+	border-top: 3px solid gray;
+	border-bottom: 3px solid gray;
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	padding: 30px;
+}
+
+.iframe-chart {
+	height: 350px;
+	overflow: hidden;
+	border: none;
+	float: right;
+	padding-left: 25px;
+	margin-top: 64px;
+}
+
+.iframe-title-container {
+	width: 100%;
+	position: relative;
+}
+
+.iframe-title {
+	width: 300px;
+	position: absolute;
+	right: 0;
+}
+
+/*Mobile styles*/
+
+@media screen and (max-width: 930px) {
+	.title {
+		left: 5%;
+	}
+}
+
+@media screen and (max-width: 610px) {
+	.nav-button {
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav-button:nth-child(1) {
+		margin-left: 0;
+	}
+
+	.nav-button:nth-child(2) {
+		margin-right: 0;
+	}
+
+	.iframe-title-container {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.iframe-container {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.iframe-chart {
+		float: none;
+		padding: 0;
+	}
+
+	.after-iframe {
+	}
+}
